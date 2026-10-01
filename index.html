@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#a8d8f7">
+  <meta name="description" content="APOLLO outdoor streetwear. Built for movement. Designed for everywhere.">
+  <title>APOLLO — Everyday, Further</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="footer.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+<body data-view="shop">
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header" id="top">
+    <button class="icon-button menu-toggle" type="button" aria-label="Open navigation" aria-expanded="false" aria-controls="primary-nav">
+      <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M3 7h18M3 12h18M3 17h18"/></svg>
+    </button>
+    <a class="wordmark" href="index.html#home" aria-label="Apollo home">APOLLO<span class="wordmark-dot">.</span></a>
+    <nav class="primary-nav" id="primary-nav" aria-label="Main navigation">
+      <a href="shop.html">Shop</a><a href="men.html">Men</a><a href="women.html">Women</a><a href="accessories.html">Accessories</a><a class="sale-link" href="summer-specials.html">Summer Specials</a>
+    </nav>
+    <div class="header-actions">
+      <button class="icon-button search-trigger" type="button" aria-label="Search products" aria-expanded="false" aria-controls="search-panel"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg></button>
+      <a class="icon-button account-link" href="#footer" aria-label="Account"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="8" r="3.5"/><path d="M4.5 21a7.5 7.5 0 0 1 15 0"/></svg></a>
+      <button class="icon-button bag-trigger" type="button" aria-label="Open shopping bag" aria-controls="cart-drawer"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M5 8h14l1 13H4L5 8Z"/><path d="M9 9V6a3 3 0 0 1 6 0v3"/></svg><span class="cart-count" aria-live="polite">0</span></button>
+    </div>
+  </header>
+  <section class="search-panel" id="search-panel" aria-label="Product search" hidden>
+    <form class="search-form" id="search-form" role="search">
+      <label class="visually-hidden" for="site-search">Search products</label>
+      <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8"/><path d="m16 16 5 5"/></svg>
+      <input id="site-search" type="search" placeholder="Search the collection" autocomplete="off">
+      <button class="text-button" type="button" id="clear-search">Clear</button>
+      <button class="text-button search-submit" type="submit">Search</button>
+      <button class="text-button" type="button" data-close-search>Close</button>
+    </form>
+  </section>
+
+  <main id="main">
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <img class="hero-image" src="https://images.unsplash.com/photo-1472396961693-142e6e269027?auto=format&fit=crop&w=2200&q=88" alt="Open mountain landscape beneath a clear sky">
+      <div class="hero-shade"></div>
+      <div class="hero-content">
+        <p class="eyebrow hero-eyebrow">FIELD NOTES — 01 / 26</p>
+        <h1 id="hero-title">EXPLORE YOUR<br>EVERYDAY<span class="hero-period">.</span></h1>
+        <p class="hero-copy">Built for movement.<br>Designed for everywhere.</p>
+        <div class="hero-buttons"><a class="button button-light" href="men.html">SHOP MEN <span aria-hidden="true">↗</span></a><a class="button button-outline-light" href="women.html">SHOP WOMEN <span aria-hidden="true">↗</span></a></div>
+      </div>
+      <div class="hero-index"><span>01</span><span class="index-rule"></span><span>04</span></div>
+      <p class="hero-caption">OUT THERE, EVERY DAY.</p>
+    </section>
+
+    <!-- Main category links replace the former landing-page product grid. -->
+    <section class="shop-collections section-wrap" id="collection" aria-labelledby="shop-collections-title">
+      <div class="shop-collections-heading">
+        <p class="eyebrow">FIND YOUR EVERYDAY</p>
+        <h2 id="shop-collections-title">SHOP COLLECTIONS</h2>
+      </div>
+      <div class="shop-collections-grid">
+        <a class="shop-collection-card" href="women.html" aria-label="Shop Women"><img src="https://images.unsplash.com/photo-1483985988355-763728e1935b?auto=format&fit=crop&w=1100&q=88" alt="Woman browsing a curated clothing collection" fetchpriority="high"><span class="shop-collection-title">WOMEN</span><span class="shop-collection-arrow" aria-hidden="true">↗</span></a>
+        <a class="shop-collection-card" href="men.html" aria-label="Shop Men"><img src="https://images.unsplash.com/photo-1523398002811-999ca8dec234?auto=format&fit=crop&w=1100&q=88" alt="Man wearing contemporary casual fashion" fetchpriority="high"><span class="shop-collection-title">MEN</span><span class="shop-collection-arrow" aria-hidden="true">↗</span></a>
+        <a class="shop-collection-card shop-collection-card-summer" href="summer-specials.html" aria-label="Shop Summer Specials"><img src="https://images.unsplash.com/photo-1529139574466-a303027c1d8b?auto=format&fit=crop&w=1100&q=88" alt="Models in bright summer fashion" fetchpriority="high"><span class="shop-collection-title">SUMMER SPECIALS</span><span class="shop-collection-arrow" aria-hidden="true">↗</span></a>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="site-footer-root"></div>
+
+  <div class="drawer-backdrop" id="drawer-backdrop" hidden></div>
+  <aside class="cart-drawer" id="cart-drawer" aria-labelledby="cart-title" aria-hidden="true" inert>
+    <div class="drawer-header"><div><p class="eyebrow">YOUR SELECTION</p><h2 id="cart-title">YOUR BAG <span class="drawer-count">(0)</span></h2></div><button class="icon-button close-cart" type="button" aria-label="Close shopping bag"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button></div>
+    <div class="cart-items" id="cart-items"></div><div class="cart-empty" id="cart-empty"><p>Your bag is taking a breather.</p><a href="#collection" class="underlined-link" data-close-cart>KEEP EXPLORING ↗</a></div>
+    <div class="cart-summary"><div class="subtotal-row"><span>SUBTOTAL</span><strong id="cart-subtotal">R0</strong></div><p>Shipping and taxes calculated at checkout.</p><button class="button button-dark checkout-button" type="button">CHECKOUT <span aria-hidden="true">↗</span></button></div>
+  </aside>
+
+  <div class="modal-backdrop" id="modal-backdrop" hidden></div>
+  <section class="quick-view" id="quick-view" role="dialog" aria-modal="true" aria-labelledby="quick-title" aria-hidden="true" inert>
+    <button class="icon-button quick-close" type="button" aria-label="Close quick view"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="m6 6 12 12M18 6 6 18"/></svg></button>
+    <div class="quick-image-wrap"><img id="quick-image" src="https://images.unsplash.com/photo-1551028719-00167b16eac5?auto=format&fit=crop&w=900&q=85" alt="Apollo Summit Jacket"><span class="quick-tag">FIELD TESTED / DAILY APPROVED</span></div>
+    <div class="quick-details"><p class="eyebrow" id="quick-category"></p><h2 id="quick-title"></h2><p class="quick-price" id="quick-price"></p><p class="quick-description" id="quick-description"></p><p class="quick-colour">COLOUR <span id="quick-colour"></span></p><div class="size-heading"><span>SELECT SIZE</span><a href="#footer">SIZE GUIDE ↗</a></div><div class="size-options" role="group" aria-label="Select size"><button type="button">XS</button><button type="button">S</button><button type="button">M</button><button type="button">L</button><button type="button">XL</button><button type="button">XXL</button></div><div class="quick-actions"><label class="quantity-select">QTY<select id="quick-quantity" aria-label="Quantity"><option>1</option><option>2</option><option>3</option><option>4</option></select></label><button class="button button-dark quick-add" type="button">ADD TO BAG <span aria-hidden="true">↗</span></button></div><p class="quick-feedback" role="status" aria-live="polite"></p></div>
+  </section>
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+</body>
+</html>
